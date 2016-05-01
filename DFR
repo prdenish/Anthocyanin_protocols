@@ -1,0 +1,182 @@
+# Production and purification of DFR (*V. vinifera*): plasmid to protein
+
+Before beginning, make sure you have the following:
+
++ thermocyler or dry bath
++ 37 C standing and 37 C and 18 C shaking incubators
++ centrifuge for 50 mL Falcon tubes and 2 mL tubes 
+
+##Day 0: Cloning plasmid into vector 
+
+Material | Concentration  | Amount per reaction
+---------|----------------|--------------------
+Gibson Assembly MasterMix | 10 μL
+Unpurified DNA fragments | 0.5 μL
+Deionized H20 | 10 μL
+
+### Supplies
+
++ P2 and tips
++ 1 mL PCR tubes
++ Ice in ice bucket
++ Thermocycler (50 C)
+
+### Instructions
+
+1. Set 2 PCR tubes on ice (one for DNA, one for positive control).
+2. Add 10 μL Gibson Assembly MasterMix to each tube. Incubate for 10 minutes.
+3. Add 0.5 μL (10 μL for positive control) to MasterMix.
+4. Add 9.5 μL (0 μL for positive control) of deionized H20 to mix.
+5. Incubate samples in thermocycler at 50 C for 15-20 minutes.
+6. Store samples on ice or at -20 C for transformation
+
+## Day 1: Transformation
+
+Material | Concentration  | Amount per reaction
+---------|----------------|--------------------
+Chemically-competent *Escherichia coli* BL21(DE3) | | 30 μL 
+Mutant plasmid solution | > 20 ng/μL | 2 μL
+Terrific broth (TB) | | 200 μL
+1% LB agar plates with kanamycin | | 1
+Sterile glass beads | | 8–10 
+15 mL round-bottom culture tube | | 1
+
+### Supplies
+
++ waste bucket 
++ P2 and tips, P200 and tips
++ Ice in ice bucket
++ Pre-warmed 42 C dry bath 
++ 37 C incubator
+
+### Instructions 
+
+1. Set round-bottom tubes on ice
+2. When the tubes are ice cold, add plasmid and competent cells and incubate on ice for at least 10 minutes (20 min is better) 
+3. Heat shock at 42 C for 90 seconds 
+4. Incubate on ice for 90 seconds 
+5. Add 200 µL Terrific Broth and recover with shaking at 37 C for 1 hour
+6. Place plates in incubator upside down to warm them
+7. Right before the hour is up, add glass beads to each plate
+8. Pipet 200 µL recovered cells on to plate and shake to spread out the cells
+9. After waiting a minute so that the liquid is absorbed, turn the plates upside down so that the beads fall onto the underside of the lid, and deposit beads into bleach solution for later recovery
+10. Incubate plate *upside down* overnight at 37 C
+
+### Tips and tricks 
+
++ Chemical competent cells should be kept on ice at all times and never warmed
++ Program the thermocycler to perform steps 1-5
++ Some tips for [troubleshooting transformations from New England Biolabs](https://www.neb.com/tools-and-resources/usage-guidelines/chemical-transformation-tips) 
++ If you are getting poor transformation efficiency, try recovering with 500 µL of media
+
+## Day 2: Growth 
+
+Material | Amount per reaction
+---------|---------------------------
+Transformation plate | 1
+Terrific Broth | 5 mL
+Kanamycin solution | 5 μL
+Tube seal | 1
+
+### Supplies 
+
++ 50 mL tube rack 
++ pre-cut seals
++ pipets and tips 
++ markers 
++ serological pipet aspirator 
++ 25 mL serological pipet
+
+### Instructions 
+
+1. Record the number of colonies on your transformation plate 
+2. Add kanamycin solution to Terrific Broth to make a batch of growth media for all of your mutants. Make enough for one extra culture
+3. Aliquot 5 mL growth media to a Falcon tube 
+1. Using a pipet, carefully scrape a single colony from the plate and dip in the growth media in the Falcon tube, and pipet up and down a few times 
+2. Repeat for the other plates 
+5. Seal the cultures with tube seals 
+6. Incubate with shaking at 37 C for 24 hours
+
+## Day 3: Expression cultures 
+
+Material | Amount per reaction
+---------|---
+Growth cultures from day 2 | 1
+Terrific Broth | 5 mL
+IPTG solution | 5 μL
+Kanamycin solution | 5 μL
+Tube seal | 1
+
+_Minirecipe_: 5 mL induction medium = 5 mL Terrific Broth + 5 µL kanamycin solution + 5 µL IPTG solution
+
+### *Supplies*
+
++ tube rack
++ vortexer
++ P20 and tips
++ serological pipet and tips
++ centrifuge
++ shaking incubator at 37 C 
+
+### Instructions
+
+1. Centrifuge growth cultures at 4,700 RPM for 10 minutes 
+2. Peel the seals off and pour away supernatant from cell pellet 
+3. Weigh the pellet and record your pellet weight 
+4. Make a batch of induction media (make enough for n+1) 
+1. Add 1 mL induction medium to cell pellet in tube 
+1. Vortex to resuspend pellet
+1. Add 4 mL more induction medium to tube
+1. Seal with tube seals
+1. Incubate with shaking at 18 C for 24 hours 
+
+### Tips 
+
++ [More information about how the pET expression system works](http://www.genomics.agilent.com/article.jsp%3FpageId%3D472)
+
+
+## Day 4: Protein purification 
+
+Material | Amount per reaction
+---------|-----------------------------
+Expression culture from day 3 | 5 mL
+Wash buffer | ~ 5 mL 
+BugBuster | 50 μL
+Dry lysis mix | 1 mg
+2 mL tube | 1
+Protein buffer | 200 μL
+Ni-NTA resin slurry | 100 μL
+
+### Supplies
+
++ centrifuge 
++ rocker 
++ tube rack 
++ flow-through collector
++ microcolumns
++ P1000 and tips 
+
+## Method 
+
+_Minirecipe:_ 500 uL lysis buffer = 450 uL wash buffer + 50 uL 10X BugBuster + 1 mg dry lysis mix
+
+1. Centrifuge expression cultures at 4,700 RPM for 10 minutes
+2. While they are spinning, make lysis buffer
+3. Useal culture and pour away supernatant 
+4. Add 500 uL wash buffer to pellet and vortex to resuspend (should have about 1 mL in there) 
+5. Aliquot 500 µL lysis buffer into resuspended pellets in 2 mL tubes
+6. Rock tubes for 20 minutes 
+7. Centrifuge at 14,700 RPM for 20 minutes to clarify the lysate 
+8. While centrifuging, prep your microcolumns
+9. Set cleaned microcolumns (if necessary, rinse with water) in rack over waste collector 
+10. Add 100uL of nickel resin (blue) from 50% slurry to each microcolumn
+11. Add 500 µL of wash buffer and allow to drip through
+12. Once the lysed cultures have finished spinning, add 500 µL of clarified supernatant and allow to drip through 
+13. Add another 500 µL of supernatant and allow to drip through  
+14. Wash six times with 500 µL of wash buffer, allow to drip through each time, nice to have a repeater for this 
+15. Once all unwanted proteins have been washed away, transfer column to fresh tube
+16. Add 100 µL protein buffer directly to beads and incubate at room temperature for five minutes 
+17. Add second 100 µL protein buffer and pulse in the centrifuge a couple of times to ensure you get all the liquid
+18. Wash out the columns
+
+# Purified protein can be stored at 4 C for up to 48 hours before assay 
